@@ -1,0 +1,33 @@
+.footer {
+    background: $colour-footer;
+    height: 200px;
+    color: white;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        // padding: 25px 15px;
+        width: 85%;
+        margin: auto;
+    }
+    a {
+        color: white;
+    }
+}
+
+.footer__item-links {
+    display: flex;
+        flex-direction: column;
+}
+
+.logo {
+    padding: 25px 0;
+}
+
+.footer__item-link {
+    display: flex;
+    padding-bottom: 5px;  
+    i {
+        padding-right: 10px;
+        width: 27px;
+    } 
+}

@@ -8,4 +8,16 @@
   text-decoration: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.header {
+  height: 80px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header__logo {
+  background-color: red;
+  color: green;
+}
+
+/*# sourceMappingURL=style_index.css.map */

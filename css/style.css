@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  height: 65px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  font-family: "shrikhand", cursive;
+  color: black;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  color: #353535;
+  height: 50px;
+}
+.location__city {
+  margin-left: 15px;
+}
+
+.hero {
+  background: #f7f7f7;
+}
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 45px 0;
+}
+.hero h2 {
+  text-align: center;
+  max-width: 250px;
+}
+.hero p {
+  text-align: center;
+  max-width: 300px;
+  color: #353535;
+  padding-top: 25px;
+}
+.hero__button {
+  margin: 35px 0 60px;
+  background: red;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hero__button p {
+  align-items: center;
+  color: green;
+}
+
+/***************** functioning section *****************/
+.functioning-section {
+  background: white;
+}
+
+.functioning {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+.functioning__items {
+  display: flex;
+  flex-direction: column;
+}
+.functioning__item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  background: #f7f7f7;
+  margin: 10px;
+  height: 75px;
+  position: relative;
+  left: 3px;
+}
+.functioning__number {
+  position: absolute;
+  background: #9356DC;
+  padding: 4px 8px;
+  border-radius: 50%;
+  left: -12px;
+  color: white;
+}
+.functioning__icon {
+  margin: 0 25px;
+}
+
+/***************** restaurant section *****************/
+.restaurant-section {
+  background: #f7f7f7;
+  padding: 50px 0;
+}
+.restaurant-section__title {
+  width: 90%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.restaurant__cards {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.restaurant__card-cover {
+  height: 175px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  background: green;
+}
+.restaurant__card-cover img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant__card-new {
+  position: absolute;
+  right: 10px;
+  background: #99E2D0;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.restaurant__description {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+.restaurant__description-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant__description-heart {
+  padding-right: 15px;
+}
+
+.footer {
+  background: #353535;
+  height: 200px;
+  color: white;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+}
+.footer a {
+  color: white;
+}
+
+.footer__item-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 25px 0;
+}
+
+.footer__item-link {
+  display: flex;
+  padding-bottom: 5px;
+}
+.footer__item-link i {
+  padding-right: 10px;
+  width: 27px;
+}
+
+/*# sourceMappingURL=style.css.map */

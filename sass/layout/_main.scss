@@ -1,0 +1,142 @@
+.location {
+  @include df-jcc-aic;
+  background: #eaeaea;
+  color: #353535;
+  height: 50px;
+  &__city {
+    margin-left: 15px;
+  }
+}
+
+.hero {
+  background: #f7f7f7;
+  &__container {
+    @include df-jcc-aic-fdirection-col;
+    padding: 45px 0;
+  }
+  h2 {
+    text-align: center;
+    max-width: 250px;
+  }
+  p {
+    text-align: center;
+    max-width: 300px;
+    color: #353535;
+    padding-top: 25px;
+  }
+  &__button {
+    margin: 35px 0 60px;
+    background: red;
+    border-radius: 100px;
+    @include df-jcc-aic;
+    color: white;
+    p {
+      align-items: center;
+      color: green;
+    }
+  }
+}
+
+/***************** functioning section *****************/
+.functioning-section {
+  background: white;
+}
+
+.functioning {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    background: #f7f7f7;
+    margin: 10px;
+    height: 75px;
+    position: relative;
+    left: 3px;
+  }
+  &__number {
+    position: absolute;
+    background: $colour-primary;
+    padding: 4px 8px;
+    border-radius: 50%;
+    left: -12px;
+    color: white;
+  }
+  &__icon {
+    margin: 0 25px;
+  }
+}
+
+/***************** restaurant section *****************/
+.restaurant-section {
+  background: $grey-light;
+  padding: 50px 0;
+  &__title {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+  }
+}
+
+.restaurant__cards {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+//   padding: 10px 0;
+  height: 250px;
+//   border-radius: 30px;
+//   background: red;
+  position: relative;
+  margin: 10px 0;
+}
+
+.restaurant__card-cover {
+    height: 175px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    background: green;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.restaurant__card-new {
+    position: absolute;
+    right: 10px;
+    background: $colour-tertiary;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.restaurant__description {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+.restaurant__description-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant__description-heart {
+    padding-right: 15px;
+}

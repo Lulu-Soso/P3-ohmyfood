@@ -1,0 +1,10 @@
+.header {
+    height: 65px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    @include df-jcc-aic;
+    &__logo {
+        font-family: "shrikhand", cursive;
+        color: black;
+    }
+}
