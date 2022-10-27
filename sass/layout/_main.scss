@@ -30,6 +30,7 @@
     border-radius: 100px;
     @include df-jcc-aic;
     color: white;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
     p {
       align-items: center;
       color: green;
@@ -60,6 +61,7 @@
     height: 75px;
     position: relative;
     left: 3px;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
   }
   &__number {
     position: absolute;
@@ -98,10 +100,11 @@
   width: 100%;
 //   padding: 10px 0;
   height: 250px;
-//   border-radius: 30px;
+  border-radius: 30px;
 //   background: red;
   position: relative;
   margin: 10px 0;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 .restaurant__card-cover {
