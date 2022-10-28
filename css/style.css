@@ -101,6 +101,13 @@
   position: relative;
   left: 3px;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.functioning__item:hover {
+  background: #f5edff;
+}
+.functioning__item:hover i {
+  color: #9356DC;
 }
 .functioning__number {
   position: absolute;
@@ -112,6 +119,9 @@
 }
 .functioning__icon {
   margin: 0 25px;
+}
+.functioning i {
+  color: #7e7e7e;
 }
 
 /***************** restaurant section *****************/
