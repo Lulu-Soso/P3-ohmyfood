@@ -7,4 +7,12 @@
         font-family: "shrikhand", cursive;
         color: black;
     }
+    &__arrow-back {
+        left: 25px;
+        position: absolute;
+        font-size: 25px;
+    }
+    a {
+        color: black;
+    }
 }

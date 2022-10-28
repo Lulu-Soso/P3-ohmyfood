@@ -20,6 +20,14 @@
   font-family: "shrikhand", cursive;
   color: black;
 }
+.header__arrow-back {
+  left: 25px;
+  position: absolute;
+  font-size: 25px;
+}
+.header a {
+  color: black;
+}
 
 .location {
   display: flex;
@@ -53,19 +61,19 @@
   color: #353535;
   padding-top: 25px;
 }
-.hero__button {
-  margin: 35px 0 60px;
-  background: red;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
-}
 .hero__button p {
-  align-items: center;
-  color: green;
+  margin: 35px 0 20px;
+  cursor: pointer;
+  border-radius: 100px;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 20px;
+  background-image: linear-gradient(#ef74da, #a05adc);
+  transition: 0.6s;
+}
+.hero__button p:hover {
+  opacity: 0.8;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
 /***************** functioning section *****************/
@@ -170,6 +178,67 @@
 
 .restaurant__description-heart {
   padding-right: 15px;
+}
+
+/***************** menu section *****************/
+.menu-cover img {
+  width: 100%;
+  position: relative;
+}
+
+.image-cover {
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+}
+
+#menu {
+  width: 100%;
+  background: #f7f7f7;
+  border-radius: 30px 30px 0 0;
+  margin-top: -45px;
+}
+
+.menu {
+  width: 90%;
+  margin: auto;
+}
+.menu__header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__header h2 {
+  font-family: "shrikhand", cursive;
+  font-size: 1.7rem;
+}
+
+.menu__grid__case {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 20px 15px;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.1);
+}
+.menu__grid__title {
+  text-transform: uppercase;
+}
+.menu__grid__title h3 {
+  font-weight: 300;
+}
+
+.menu__button-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__button-order .menu__button {
+  background: red;
+  border-radius: 50px;
+  padding: 15px 45px;
+  color: white;
+  margin: 40px;
 }
 
 .footer {
