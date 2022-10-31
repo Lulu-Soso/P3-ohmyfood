@@ -1,6 +1,8 @@
 @import "./utils/variables";
-@import "./base/mixins";
+@import "./utils/mixins";
+@import "./utils/keyframes";
 @import "./base/global";
+@import "./base/typography";
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";

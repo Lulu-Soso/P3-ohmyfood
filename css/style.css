@@ -1,15 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes validation-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 a {
   color: black;
-  list-style: none;
-  text-decoration: none;
 }
 
 .header {
@@ -22,15 +30,11 @@ a {
 }
 .header__logo {
   font-family: "shrikhand", cursive;
-  color: black;
 }
 .header__arrow-back {
   left: 25px;
   position: absolute;
   font-size: 25px;
-}
-.header a {
-  color: black;
 }
 
 .location {
@@ -269,9 +273,18 @@ a {
   background: white;
   margin-bottom: 20px;
   border-radius: 20px;
-  padding: 20px 15px;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.1);
   position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.menu__grid__case:hover .menu-validation {
+  margin-right: 0rem;
+  transition: 0.6s;
+}
+.menu__grid__case:hover i {
+  animation: validation-spin 0.6s;
 }
 .menu__grid__title {
   text-transform: uppercase;
@@ -292,18 +305,46 @@ a {
 .menu-description {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding: 20px 20px 20px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-description__dish {
   overflow: hidden;
+}
+.menu-description__dish h4 {
+  overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+.menu-description__dish p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.menu-description__price {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1rem;
+  font-weight: bold;
 }
 
 .menu-validation {
   background: #99E2D0;
   right: 0;
-  position: absolute;
   height: 100%;
+  width: 60px;
+  padding: 31px 0;
+  display: flex;
+  justify-content: center;
+  margin-right: -4rem;
+  font-size: 1.4rem;
+  color: white;
 }
 
 .menu__button-order {
