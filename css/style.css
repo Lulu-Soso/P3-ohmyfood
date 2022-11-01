@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes opacity-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes validation-spin {
   0% {
     transform: rotate(0deg);
@@ -225,6 +233,7 @@ a {
 }
 .restaurant__description-heart .fa-solid:hover {
   background-image: linear-gradient(#ef74da, #a05adc);
+  animation: opacity-heart 0.6s ease;
 }
 
 /***************** menu section *****************/
@@ -262,6 +271,8 @@ a {
   font-size: 1.7rem;
 }
 .menu__header__heart {
+  display: flex;
+  align-items: center;
   padding-right: 15px;
   position: relative;
   font-size: 1.5rem;
@@ -277,6 +288,7 @@ a {
 }
 .menu__header__heart .fa-solid:hover {
   background-image: linear-gradient(#ef74da, #a05adc);
+  animation: opacity-heart 0.6s ease;
 }
 
 .menu__grid__case {
@@ -369,6 +381,7 @@ a {
   margin-right: -4rem;
   font-size: 1.4rem;
   color: white;
+  transition: 0.6s;
 }
 
 .menu__button-order {
