@@ -211,6 +211,13 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    animation: apparition-menu 1.5s;
+    animation-fill-mode: both;
+    @for $i from 1 through $number-cases{
+        &:nth-child(#{$i}) {
+          animation-delay: 0.2s * $i;
+        }
+      }
     &:hover {
       .menu-validation {
         margin-right: 0rem;

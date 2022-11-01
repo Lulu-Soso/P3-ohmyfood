@@ -7,6 +7,16 @@
     transform: rotate(360deg);
   }
 }
+@keyframes apparition-menu {
+  0% {
+    margin-top: 10%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -278,6 +288,20 @@ a {
   display: flex;
   align-items: center;
   overflow: hidden;
+  animation: apparition-menu 1.5s;
+  animation-fill-mode: both;
+}
+.menu__grid__case:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu__grid__case:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu__grid__case:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.menu__grid__case:nth-child(4) {
+  animation-delay: 0.8s;
 }
 .menu__grid__case:hover .menu-validation {
   margin-right: 0rem;
