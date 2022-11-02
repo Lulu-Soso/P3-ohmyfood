@@ -55,3 +55,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@mixin opacity-spin {
+  background-image: linear-gradient(#ef74da, #a05adc);
+}

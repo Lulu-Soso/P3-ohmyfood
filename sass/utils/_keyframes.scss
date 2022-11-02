@@ -26,3 +26,21 @@
         opacity: 1;
     }
 }
+
+@keyframes loading-spinner {
+    to {
+        z-index: -1;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text-spin {
+    to {
+        transform: rotate(-360deg);
+    }
+}

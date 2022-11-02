@@ -1,0 +1,57 @@
+.loading-screen  {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    background-color: white;
+    inset: 0; 
+    position: fixed;
+    z-index: 1;
+    @include df-jcc-aic;
+    animation: loading-spinner 10ms 3s forwards;
+}
+
+.loading {
+    background-color: $grey-light;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 10px solid $colour-secondary;
+    position: relative;
+    animation: spin 3s linear infinite;
+    &:hover {
+        animation-play-state: paused;
+        span {
+            animation-play-state: paused;
+        }
+    }
+    &::before, &::after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: -10px;
+        border-radius: 50%;
+    }
+    &::before {
+        border-top: 10px solid $colour-primary;
+        transform: rotate(120deg);
+    }
+    &::after{
+        border-top: 10px solid $colour-tertiary;
+        transform: rotate(240deg);
+    }
+    span {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        animation: text-spin 3s linear infinite;
+        font-family: "shrikhand", cursive;
+        i {
+            margin-left: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+}
