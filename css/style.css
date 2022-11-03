@@ -175,7 +175,7 @@ a {
 }
 .hero__button p:hover {
   opacity: 0.8;
-  box-shadow: 0 7px 7px 0 #919191;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
 /***************** functioning section *****************/
@@ -240,7 +240,7 @@ a {
 }
 .functioning__item:hover {
   background: #f5edff;
-  box-shadow: 0 7px 7px 0 #919191;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
 .functioning__item:hover i {
   color: #9356DC;
@@ -274,6 +274,12 @@ a {
 .restaurant-section__title {
   padding: 1rem 0;
 }
+@media (max-width: 768px) {
+  .restaurant-section__title {
+    width: 90%;
+    margin: auto;
+  }
+}
 @media (max-width: 992px) {
   .restaurant-section {
     width: 90%;
@@ -283,11 +289,12 @@ a {
 @media (max-width: 768px) {
   .restaurant-section {
     width: 100%;
+    margin: auto;
   }
 }
 
 .restaurant__cards {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -299,6 +306,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     display: block;
+    width: 90%;
   }
 }
 
@@ -311,7 +319,7 @@ a {
   transition: 0.6s;
 }
 .restaurant__card:hover {
-  box-shadow: 0 7px 7px 0 #919191;
+  box-shadow: 0 17px 17px 5px #919191;
 }
 @media (max-width: 768px) {
   .restaurant__card {
@@ -355,6 +363,16 @@ a {
 .restaurant__description-info {
   display: flex;
   flex-direction: column;
+}
+
+.restaurant__description-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.restaurant__description-location {
+  font-weight: 300;
 }
 
 .restaurant__description-heart {
@@ -488,7 +506,7 @@ a {
   animation-delay: 1s;
 }
 .menu__grid__case:hover {
-  box-shadow: 0 7px 7px 0 #919191;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
 .menu__grid__case:hover .menu-validation {
   margin-right: 0rem;
@@ -530,6 +548,7 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: bold;
+  font-size: 18px;
 }
 .menu-description__dish p {
   overflow: hidden;
@@ -577,7 +596,7 @@ a {
 }
 .menu__button-order .menu__button:hover {
   opacity: 0.8;
-  box-shadow: 0 7px 7px 0 #919191;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
 .footer {

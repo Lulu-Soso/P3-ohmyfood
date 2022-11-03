@@ -23,7 +23,7 @@
 
 @mixin darken-shadow-hover($colour: $grey-light) {
   $colour: darken($colour, 40%);
-  box-shadow: 0 7px 7px 0 $colour;
+  box-shadow: 0 17px 17px 5px $colour;
 }
 
 @mixin button-gradient {
@@ -36,7 +36,7 @@
   padding: 20px;
   &:hover {
     opacity: 0.8;
-    @include darken-shadow-hover;
+    @include shadow-hover;
   }
 }
 

@@ -36,7 +36,7 @@
       transition: 0.6s;
       &:hover {
         opacity: 0.8;
-        @include darken-shadow-hover;
+        @include shadow-hover;
       }
     }
   }
@@ -95,7 +95,7 @@
 
     &:hover {
       background: $hover-btn;
-      @include darken-shadow-hover;
+      @include shadow-hover;
       i {
         color: $colour-primary;
       }
@@ -128,6 +128,10 @@
   padding: 4rem 0;
   &__title {
     padding: 1rem 0;
+    @media (max-width: 768px) {
+      width: 90%;
+      margin: auto;
+    }
   }
   @media (max-width: 992px) {
     width: 90%;
@@ -135,11 +139,12 @@
   }
   @media (max-width: 768px) {
     width: 100%;
+    margin: auto;
   }
 }
 
 .restaurant__cards {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -149,6 +154,7 @@
     display: grid;
     grid-template-columns: 1fr;
     display: block;
+    width: 90%;
   }
 }
 
@@ -203,6 +209,16 @@
 .restaurant__description-info {
   display: flex;
   flex-direction: column;
+}
+
+.restaurant__description-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.restaurant__description-location {
+  font-weight: 300
 }
 
 .restaurant__description-heart {
@@ -288,7 +304,7 @@
       }
     }
     &:hover {
-      @include darken-shadow-hover;
+      @include shadow-hover;
       .menu-validation {
         margin-right: 0rem;
         transition: 0.6s;
@@ -326,6 +342,7 @@
     h4 {
       @include ellipsis;
       font-weight: bold;
+      font-size: 18px;
     }
     p {
       @include ellipsis;
