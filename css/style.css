@@ -51,6 +51,7 @@
 
 a {
   color: black;
+  cursor: pointer;
 }
 
 .loading-screen {
@@ -174,7 +175,7 @@ a {
 }
 .hero__button p:hover {
   opacity: 0.8;
-  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 7px 0 #919191;
 }
 
 /***************** functioning section *****************/
@@ -200,6 +201,9 @@ a {
     margin: auto;
     gap: 3%;
   }
+}
+.functioning h2 {
+  margin-bottom: 1rem;
 }
 .functioning__items {
   display: grid;
@@ -236,7 +240,7 @@ a {
 }
 .functioning__item:hover {
   background: #f5edff;
-  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 7px 0 #919191;
 }
 .functioning__item:hover i {
   color: #9356DC;
@@ -262,14 +266,13 @@ a {
 }
 
 .restaurant-section {
-  max-width: 900px;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
-  padding: 50px 0;
+  padding: 4rem 0;
 }
 .restaurant-section__title {
-  width: 90%;
-  margin: auto;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 @media (max-width: 992px) {
   .restaurant-section {
@@ -305,6 +308,10 @@ a {
   position: relative;
   margin: 0.5rem 0;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.6s;
+}
+.restaurant__card:hover {
+  box-shadow: 0 7px 7px 0 #919191;
 }
 @media (max-width: 768px) {
   .restaurant__card {
@@ -444,6 +451,7 @@ a {
 }
 @media (max-width: 768px) {
   .menu__grid {
+    display: block;
     grid-template-columns: 1fr;
   }
 }
@@ -455,13 +463,14 @@ a {
   background: white;
   margin-bottom: 20px;
   border-radius: 20px;
-  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
   animation: apparition-menu 1.5s;
   animation-fill-mode: both;
+  transition: 0.6s;
 }
 .menu__grid__case:nth-child(1) {
   animation-delay: 0.2s;
@@ -474,6 +483,12 @@ a {
 }
 .menu__grid__case:nth-child(4) {
   animation-delay: 0.8s;
+}
+.menu__grid__case:nth-child(5) {
+  animation-delay: 1s;
+}
+.menu__grid__case:hover {
+  box-shadow: 0 7px 7px 0 #919191;
 }
 .menu__grid__case:hover .menu-validation {
   margin-right: 0rem;
@@ -551,7 +566,7 @@ a {
 }
 .menu__button-order .menu__button {
   margin: 40px;
-  background-image: linear-gradient(#ef74da, #a05adc);
+  background: linear-gradient(#ef74da, #a05adc);
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);
   transition: 0.6s;
   cursor: pointer;
@@ -562,7 +577,7 @@ a {
 }
 .menu__button-order .menu__button:hover {
   opacity: 0.8;
-  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 7px 0 #919191;
 }
 
 .footer {
