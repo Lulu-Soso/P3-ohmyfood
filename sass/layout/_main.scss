@@ -258,10 +258,9 @@
 .menu__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-items: center;
+  place-items: flex-start;
   gap: 2%;
   max-width: 1200px;
-  margin: auto;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
