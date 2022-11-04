@@ -94,7 +94,7 @@
     transition: 0.6s;
 
     &:hover {
-      background: $hover-btn;
+      @include lighten-colour-hover;
       @include shadow-hover;
       i {
         color: $colour-primary;

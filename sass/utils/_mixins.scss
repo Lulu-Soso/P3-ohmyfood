@@ -26,6 +26,11 @@
   box-shadow: 0 17px 17px 5px $colour;
 }
 
+@mixin lighten-colour-hover($colour: $colour-primary) {
+  $colour: lighten($colour, 35%);
+  background: $colour;
+}
+
 @mixin button-gradient {
   background: linear-gradient(#ef74da, #a05adc);
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2);

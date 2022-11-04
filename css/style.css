@@ -239,7 +239,7 @@ a {
   transition: 0.6s;
 }
 .functioning__item:hover {
-  background: #f5edff;
+  background: #f2eafb;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.5);
 }
 .functioning__item:hover i {
